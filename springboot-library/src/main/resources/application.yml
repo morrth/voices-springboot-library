@@ -1,0 +1,29 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/library?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+    username: moon
+    password: weiwei
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    show-sql: true
+    database-platform: org.hibernate.dialect.MySQL8Dialect
+    properties:
+      hibernate:
+      format_sql: true
+
+    #仅开发阶段启用
+#    generate-ddl: true
+#    hibernate:
+#      ddl-auto: update
+#逆向工程  正向工程
+
+
+server:
+#  http2:
+#    enabled: true
+  ssl:
+    key-store: classpath:library.morrth.top.jks
+    key-password: m50vmvvwmu9
+    key-store-type: JKS
+    enabled: true
+  port: 8181
