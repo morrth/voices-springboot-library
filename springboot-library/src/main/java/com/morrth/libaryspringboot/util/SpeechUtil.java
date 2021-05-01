@@ -28,11 +28,11 @@ import java.util.Base64;
 public class SpeechUtil {
 
 
-    public static final String APP_ID = "23838807";
+    public static final String APP_ID = "*";
 
-    public static final String API_KEY = "66tCM2fwAquuSFGPjBYWSPRz";
+    public static final String API_KEY = "*";
 
-    public static final String SECRET_KEY = "041uUwGz6f588z46MxgimPjNvs00ucMz";
+    public static final String SECRET_KEY = "*";
 
     private static AipSpeech client;
 
